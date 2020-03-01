@@ -37,3 +37,5 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+/.idea/
+/JsonSchemaTest.iml

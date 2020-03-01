@@ -1,0 +1,11 @@
+{
+  "trader" : {
+    "employeeId": "x123",
+    "employeeId1": "x123"
+  },
+  "trades" : [
+    {
+      "tradeId": "abc"
+    }
+  ]
+}

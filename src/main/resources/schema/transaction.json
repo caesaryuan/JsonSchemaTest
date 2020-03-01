@@ -1,0 +1,46 @@
+{
+  "$id": "https://xiaoc.info/transaction_new.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Transaction",
+  "type": "object",
+  "properties": {
+    "trader": {
+      "$ref": "#/definitions/employee"
+    },
+    "trades": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/trade" }
+    }
+  },
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "$ref": "resource:schema/transaction_new.json"
+    }
+  ],
+  "definitions": {
+    "employee": {
+      "type": "object",
+      "properties": {
+        "employeeId": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "$ref": "resource:schema/transaction_new.json#/definitions/employee"
+        }
+      ]
+    },
+    "trade": {
+      "type": "object",
+      "properties": {
+        "tradeId": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

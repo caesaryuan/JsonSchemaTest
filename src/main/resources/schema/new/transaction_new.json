@@ -1,0 +1,17 @@
+{
+  "$id": "https://xiaoc.info/transaction_new.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Transaction",
+  "type": "object",
+  "required": [
+    "trades",
+    "trader"
+  ],
+  "definitions": {
+    "employee": {
+      "required": [
+        "employeeId"
+      ]
+    }
+  }
+}
